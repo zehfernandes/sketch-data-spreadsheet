@@ -28,8 +28,6 @@
     "@babel/runtime": "^7.4.3",
     "@skpm/fs": "^0.2.4",
     "@skpm/os": "^0.1.1",
-    "@skpm/path": "^0.1.4",
-    "currency-formatter": "^1.5.3",
-    "google-spreadsheet": "^2.0.3"
+    "@skpm/path": "^0.1.4"
   }
 }
