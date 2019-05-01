@@ -1,0 +1,35 @@
+{
+  "name": "dataspreadsheet",
+  "version": "0.1.0",
+  "description": "A DataSupplier plugin",
+  "engines": {
+    "sketch": ">=3.0"
+  },
+  "skpm": {
+    "name": "Data Spreadsheet",
+    "manifest": "src/manifest.json",
+    "main": "dataspreadsheet.sketchplugin",
+    "assets": [
+      "assets/**/*"
+    ]
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch --run",
+    "postinstall": "npm run build && skpm-link",
+    "link": "skpm-link"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.5.2"
+  },
+  "author": "zehfernandes <ozehfernandes@gmail.com>",
+  "dependencies": {
+    "@babel/runtime": "^7.4.3",
+    "@skpm/fs": "^0.2.4",
+    "@skpm/os": "^0.1.1",
+    "@skpm/path": "^0.1.4",
+    "currency-formatter": "^1.5.3",
+    "google-spreadsheet": "^2.0.3"
+  }
+}

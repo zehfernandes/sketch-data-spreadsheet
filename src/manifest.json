@@ -1,0 +1,35 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "icon": "icon.png",
+  "suppliesData": true,
+  "identifier": "com.zehfernandes.dataspreadsheet",
+  "commands": [
+    {
+      "script": "index.js",
+      "handlers": {
+        "actions": {
+          "Startup": "onStartup",
+          "Shutdown": "onShutdown",
+          "SupplyData": "onSupplyData"
+        }
+      }
+    },
+    {
+      "name": "Sync Content",
+      "script": "index.js",
+      "identifier": "dataspreadsheet-sync",
+      "handler": "getNewContent"
+    },
+    {
+      "name": "Link Spreadsheet",
+      "script": "index.js",
+      "identifier": "dataspreadsheet-config",
+      "handler": "linkSpreadsheet"
+    }
+  ],
+  "menu": {
+    "title": "Data Spreedsheet",
+    "items": ["dataspreadsheet-sync", "dataspreadsheet-config"]
+  }
+}
